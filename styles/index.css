@@ -1,0 +1,96 @@
+/* dividers */
+
+.divider {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.divider::after {
+  content: '';
+  width: 40%;
+  height: 1px;
+  background-color: var(--light-cyan);
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+}
+
+.divider::before {
+  content: '';
+  width: 40%;
+  height: 1px;
+  background-color: var(--light-cyan);
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+}
+
+/* CONTAINER */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 2rem;
+  margin-left: 2rem;
+
+  min-height: 100vh;
+}
+
+/* ADVICE CONTAINER */
+
+.advice-container {
+  font-family: 'Manrope', sans-serif;
+
+  text-align: center;
+  position: relative;
+
+  background-color: var(--grayish-blue);
+  max-width: 25rem;
+
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.advice-container .advice-title {
+  color: var(--neon-green);
+  font-size: 0.875rem; /* 14px */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.5625rem; /* 15px */
+}
+
+.advice-container .advice {
+  font-size: 1.75rem; /* 28px */
+  color: var(--light-cyan);
+  font-family: serif;
+}
+
+.advice-container .advice .advice-text {
+  font-family: 'Manrope', sans-serif;
+}
+
+.advice-container .button {
+  width: 3.75rem; /* 60px */
+  height: 3.75rem; /* 60px */
+  background-color: var(--neon-green);
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+
+  border-radius: 50%;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+.advice-container .button:hover {
+  box-shadow: 0px 0px 20px var(--neon-green);
+  transition: 0.2s;
+}

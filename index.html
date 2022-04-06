@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="advice-container">
+          <h1 class="advice-title">Advice #<span class="advice-id"></span></h1>
+          <p class="advice">&ldquo;<span class="advice-text"></span>&rdquo;</p>
+
+          <div class="divider">
+            <img src="./images/pattern-divider.svg" alt="Mobile Divider" />
+          </div>
+
+          <div class="dice">
+            <button class="button" id="dice-button">
+              <img src="./images/icon-dice.svg" alt="Icon Dice" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.github.com/matheus-lincon">Matheus Lincon</a>.
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
